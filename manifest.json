@@ -1,0 +1,19 @@
+{
+    "name": "klok",
+    "description": "A Productivity Visual",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_workers": ["cookies.js", "popup.js", "background.js"]
+    },
+    "permissions": ["storage", "cookies"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        
+      }
+    },
+    "icons": {
+      
+    }
+  }
