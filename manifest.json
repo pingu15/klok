@@ -9,11 +9,9 @@
     "permissions": ["storage", "cookies"],
     "action": {
       "default_popup": "popup.html",
-      "default_icon": {
-        
-      }
+      "default_icon": "icon.png"
     },
     "icons": {
-      
+        "16": "icon.png"
     }
   }
