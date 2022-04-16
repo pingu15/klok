@@ -202,12 +202,13 @@ button:hover {
 }
 
 #taskName {
-  position: fixed;
-  width: 119px;
-  height: 18px;
-  left: 140px;
+  position: absolute;
+  width: 260px;
+  height: 36px;
+  left: 70px;
   top: 172px;
-
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -224,7 +225,7 @@ button:hover {
   width: 119px;
   height: 18px;
   left: 140px;
-  top: 220px;
+  top: 205px;
 
   font-family: "Inter";
   font-style: normal;
@@ -240,7 +241,7 @@ button:hover {
 #pause {
   position: fixed;
   left: 190px;
-  top: 245px;
+  top: 235px;
   color: #e5e5e5;
   font-weight: 900;
   letter-spacing: 1px;
@@ -350,19 +351,17 @@ button:hover {
 }
 
 #line3 {
-  position: absolute;
-  width: 321px;
-  height: 0px;
-  left: 40px;
-  top: 135px;
-  border: 2px solid #8da4a5;
-  box-sizing: border-box;
+  width: 320px;
+  height: 3px;
+  background-color: #8da4a5;
+  margin-left: 40px;
+  margin-top: 135px;
 }
 
 #list {
   position: absolute;
   width: 320px;
-  height: 220px;
+  height: 210px;
   left: 40px;
   top: 312px;
 
@@ -380,8 +379,10 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  overflow:hidden; 
-  overflow-y:scroll;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
 
 ul li {
@@ -389,7 +390,8 @@ ul li {
   background-color: #031918;
   padding: 12px;
   text-decoration: none;
-  color: e5e5e5;
+  text-overflow: ellipsis;
+  color: #e5e5e5;
   display: block;
   position: relative;
 }
@@ -409,4 +411,57 @@ ul li:hover {
 
 .close:hover {
   background: #79aa84;
+}
+
+#list2 {
+  position: absolute;
+  width: 320px;
+  height: 350px;
+  left: 40px;
+  top: 182px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  background-color: #031918;
+  color: #e5e5e5;
+}
+
+ul::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+#tasktext {
+  color: #e5e5e5;
+  width: 210px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#tasktimer {
+  position: absolute;
+  left: 72.5%;
+  right: 13.07%;
+  top: 43.9%;
+  bottom: 26.83%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  letter-spacing: 0.1em;
+
+  color: #8da4a5;
+}
+
+.select:hover {
+  cursor: pointer;
 }
