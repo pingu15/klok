@@ -1,5 +1,305 @@
 body {
-    width: 400px;
-    height: 580px;
-    background-color: white;
+  width: 400px;
+  height: 580px;
+  padding: 0;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#button1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 580px;
+  background-color: #031918;
+  border: 0px #031918;
+}
+
+#StartingScreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 580px;
+  background-color: #031918;
+}
+
+#title1 {
+  position: fixed;
+  width: 162px;
+  height: 61px;
+  left: 119px;
+  top: 338px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #e5e5e5;
+}
+
+#line1 {
+  position: fixed;
+  width: 200px;
+  height: 0px;
+  left: 100px;
+  top: 409.5px;
+  border: 1.2px solid #8da4a5;
+}
+
+#text1 {
+  position: fixed;
+  width: 124px;
+  height: 48px;
+  left: 138px;
+  top: 445px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+#NameScreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 580px;
+  background-color: #031918;
+}
+
+#cornerName1 {
+  position: fixed;
+  top: 21px;
+  left: 56px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #e5e5e5;
+}
+
+#line2 {
+  position: fixed;
+  width: 340px;
+  height: 0px;
+  left: 30px;
+  top: 58px;
+  border: 0.5px solid #8da4a5;
+}
+
+#text2 {
+  position: fixed;
+  width: 192px;
+  height: 24px;
+  left: 104px;
+  top: 277px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #e5e5e5;
+}
+
+#input1 {
+  position: fixed;
+  width: 173px;
+  height: 28px;
+  left: 113px;
+  top: 312px;
+  background: #031918;
+  border: 1.2px solid #8da4a5;
+  box-sizing: border-box;
+  color: white;
+}
+
+#enter1 {
+  position: fixed;
+  width: 50px;
+  height: 18px;
+  left: 236px;
+  top: 351px;
+  background-color: #031918;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  border: 0px;
+  color: #8da4a5;
+}
+
+#image1 {
+  position: fixed;
+  width: 137px;
+  height: 137px;
+  left: 131px;
+  top: 144px;
+}
+
+#HomeScreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 580px;
+  background-color: #031918;
+}
+
+#image2 {
+  position: fixed;
+  width: 19px;
+  height: 19px;
+  left: 28px;
+  top: 23px;
+}
+
+#title2 {
+  position: fixed;
+  width: 120px;
+  height: 24px;
+  left: 140px;
+  top: 90px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+}
+
+#rect1 {
+  position: fixed;
+  width: 320px;
+  height: 152px;
+  left: 40px;
+  top: 135px;
+
+  background: #031918;
+  border: 3.6px solid #8da4a5;
+  box-sizing: border-box;
+}
+
+#taskName {
+  position: fixed;
+  width: 119px;
+  height: 18px;
+  left: 140px;
+  top: 172px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+}
+
+#timer {
+  position: fixed;
+  width: 119px;
+  height: 18px;
+  left: 140px;
+  top: 220px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #2d7975;
+}
+
+#pause {
+  position: fixed;
+  left: 190px;
+  top: 245px;
+  color: #e5e5e5;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: #031918;
+  border: 0px;
+}
+
+#highlight1 {
+  position: fixed;
+  width: 64px;
+  height: 15px;
+  left: 53px;
+  top: 102px;
+
+  background: rgba(141, 164, 165, 0.35);
+}
+
+#highlight2 {
+  position: fixed;
+  width: 117px;
+  height: 15px;
+  left: 243px;
+  top: 103px;
+
+  background: rgba(141, 164, 165, 0.35);
+}
+
+#text3 {
+  position: fixed;
+  width: 70px;
+  height: 24px;
+  left: 46px;
+  top: 92px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+}
+
+#text4 {
+  position: fixed;
+  width: 122px;
+  height: 24px;
+  left: 233px;
+  top: 92px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
 }
