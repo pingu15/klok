@@ -1,13 +1,27 @@
 function addCookie(name, val) {
-    document.cookie = name+"="+val+";";
+  var d = new Date();
+  d.setTime(d.getTime() + 100000 * 24 * 60 * 60 * 1000);
+  document.cookie = name + "=" + val + ";" + "expires=" + d.toUTCString() + ";path=/";
+}
+
+function removeCookie(name) {
+  var d = new Date();
+  d.setTime(d.getTime());
+  document.cookie = name + "=;" + "expires=" + d.toUTCString() + ";path=/";
 }
 
 function getCookie(name) {
-    var cookies = document.cookie.split("; ");
-    for(let i = 0; i < cookies.length; i++) {
-        if(cookies[i].split("=")[0] == name) {
-            return cookies[i].split("=")[1];
-        }
+  var name = name + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
     }
-    return "bro????????????????????";
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "nothin";
 }
