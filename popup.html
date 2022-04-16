@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>klok</title>
 </head>
 <body>
+    <div id="StartingScreen" hidden> 
+        <button id="button1"></button>
+        <img src="icon.png" id="image1">
+        <div id="title1">KLOK</div>
+        <div id="line1"></div>
+        <div id="text1">Click To Continue</div>
+    </div>
+    <div id="NameScreen" hidden>
+        <img src="icon.png" id="image2">
+        <div id="cornerName1">KLOK</div>
+        <div id="line2"></div>
+        <div id="text2">What is your name?</div>
+        <input type="text" id="input1" placeholder="Name">
+        <button id="enter1">Enter</button>
+    </div>
+    <div id="HomeScreen" hidden>  
+        <img src="icon.png" id="image2">
+        <div id="cornerName1">KLOK</div>
+        <div id="line2"></div>
+        <div id="rect1"></div>
+        <div id="taskName">No Current Tasks</div>
+        <div id="timer" hidden>00:00:00</div>
+        <button id="pause" hidden>▶</button>
+        <div id="highlight1" hidden></div>
+        <div id="highlight2" hidden></div>
+        <div id="text3">To-Do</div>
+        <div id="text4">Completed</div>
+    </div>
     <script src="popup.js"></script>
     <script src="cookies.js"></script>
 </body>
