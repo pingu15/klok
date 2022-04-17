@@ -4,12 +4,6 @@ function addCookie(name, val) {
   document.cookie = name + "=" + val + ";" + "expires=" + d.toUTCString() + ";path=/";
 }
 
-function removeCookie(name) {
-  var d = new Date();
-  d.setTime(d.getTime());
-  document.cookie = name + "=;" + "expires=" + d.toUTCString() + ";path=/";
-}
-
 function getCookie(name) {
   var name = name + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
