@@ -11,7 +11,7 @@ var runningtime = []
 var curTime = 0;
 var lastopened = new Date().getTime();
 
-var douwannatest = true;
+var douwannatest = false;
 
 window.onload = function () {
     if(douwannatest) {
