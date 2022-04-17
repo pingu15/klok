@@ -381,7 +381,7 @@ ul {
   margin: 0;
   overflow: hidden;
   overflow-y: scroll;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
@@ -410,7 +410,7 @@ ul li:hover {
 }
 
 .close:hover {
-  background: #79aa84;
+  background: #ff8888;
 }
 
 #list2 {
@@ -418,7 +418,7 @@ ul li:hover {
   width: 320px;
   height: 350px;
   left: 40px;
-  top: 182px;
+  top: 170px;
 
   font-family: "Inter";
   font-style: normal;
@@ -431,7 +431,6 @@ ul li:hover {
 }
 
 ul::-webkit-scrollbar {
-  /* WebKit */
   width: 0;
   height: 0;
 }
@@ -446,9 +445,9 @@ ul::-webkit-scrollbar {
 
 #tasktimer {
   position: absolute;
-  left: 72.5%;
+  left: 69%;
   right: 13.07%;
-  top: 43.9%;
+  top: 38%;
   bottom: 26.83%;
 
   font-family: "Inter";
@@ -456,7 +455,7 @@ ul::-webkit-scrollbar {
   font-weight: 300;
   font-size: 10px;
   line-height: 12px;
-  text-align: right;
+  text-align: left;
   letter-spacing: 0.1em;
 
   color: #8da4a5;
@@ -464,4 +463,595 @@ ul::-webkit-scrollbar {
 
 .select:hover {
   cursor: pointer;
+}
+
+#checkmark {
+  position: absolute;
+  width: 23px;
+  height: 27px;
+  left: 320px;
+  top: 250px;
+  color: #e5e5e5;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 12px;
+  text-align: right;
+  background-color: #031918;
+  border: 0px;
+}
+
+#addtask {
+  position: absolute;
+  width: 120px;
+  height: 18px;
+  left: 40px;
+  top: 530px;
+  background-color: #031918;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  border: 0px;
+  color: #8da4a5;
+}
+
+#taskscount {
+  position: absolute;
+  width: 289px;
+  height: 49px;
+  left: 55px;
+  top: 533px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #e5e5e5;
+}
+
+#timecomp {
+  position: absolute;
+  left: 80%;
+  right: 13.07%;
+  top: 38%;
+  bottom: 26.83%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+  letter-spacing: 0.1em;
+
+  color: #8da4a5;
+}
+
+.popup1 {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 400px;
+  height: 580px;
+  background-color: #031819;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+#lin2 {
+  position: absolute;
+  width: 315px;
+  height: 0px;
+  left: 41px;
+  top: 548px;
+
+  border: 0.5px solid #8da4a5;
+}
+
+h1 {
+  position: absolute;
+  width: 137px;
+  height: 32px;
+  left: 132px;
+  top: 61px;
+
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+
+  color: #e5e5e5;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+
+  color: #e5e5e5;
+}
+
+#taskname {
+  position: absolute;
+  width: 169px;
+  height: 24px;
+  left: 116px;
+  top: 80px;
+}
+
+#websitesblock {
+  position: absolute;
+  width: 282px;
+  height: 24px;
+  left: 59px;
+  top: 195px;
+}
+
+h3 {
+  position: absolute;
+  width: 283px;
+  height: 16px;
+  left: 56px;
+  top: 228px;
+
+  font-weight: 133;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #8da4a5;
+}
+
+#name {
+  position: absolute;
+  width: 283px;
+  height: 37px;
+  left: 59px;
+  top: 128px;
+  padding-left: 9px;
+  background: #031918;
+  border: 1.5px solid #8da4a5;
+  box-sizing: border-box;
+  color: #8da4a5;
+  font-family: "Inter";
+}
+
+#websites {
+  position: absolute;
+  width: 282px;
+  height: 80px;
+  left: 57px;
+  top: 270px;
+  padding-left: 9px;
+  background: #031918;
+  border: 1.5px solid #8da4a5;
+  box-sizing: border-box;
+  color: #8da4a5;
+  resize: none;
+  font-family: "Inter";
+  padding-top: 6px;
+}
+
+#cancel {
+  position: absolute;
+  width: 72px;
+  height: 22px;
+  left: 58px;
+  top: 510px;
+  background-color: #031819;
+  font-weight: 380;
+  font-size: 19px;
+  border: 0px;
+  color: #5b847f;
+}
+
+#create {
+  position: absolute;
+  width: 70px;
+  height: 24px;
+  left: 270px;
+  top: 510px;
+  background-color: #031819;
+  font-weight: 380;
+  font-size: 19px;
+  text-align: right;
+  border: 0px;
+  color: #e5e5e5;
+}
+
+#homepage {
+  background: #031819;
+  width: 400px;
+  height: 580px;
+}
+
+#gear {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 360px;
+  top: 15px;
+}
+
+#gearbutton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 360px;
+  top: 15px;
+  background: none;
+  border: none;
+}
+
+.popup {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#settingscontent {
+  background-color: #031819;
+
+  position: absolute;
+  width: 180px;
+  height: 200px;
+  left: 180px;
+  top: 66px;
+
+  font-family: "Inter";
+  font-style: normal;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+#sTitle {
+  position: absolute;
+  width: 71px;
+  height: 18px;
+  left: 56px;
+  top: 5px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #e3e3e3;
+}
+
+#nameTit {
+  position: absolute;
+  width: 31px;
+  height: 12px;
+  left: 22px;
+  top: 38px;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #e5e5e5;
+}
+
+#nameinput {
+  position: absolute;
+  width: 140px;
+  height: 26px;
+  left: 22px;
+  top: 63.45px;
+
+  border: 1px solid #8da4a5;
+  box-sizing: border-box;
+  background: #031819;
+  color: #8da4a5;
+  padding-left: 5px;
+}
+
+#sleepingtime {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  left: 22px;
+  top: 93px;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #e5e5e5;
+}
+
+#timeinput {
+  position: absolute;
+  width: 140px;
+  height: 24px;
+  left: 22px;
+  top: 116.45px;
+
+  border: 1px solid #8da4a5;
+  box-sizing: border-box;
+  background: #031819;
+  color: #8da4a5;
+  padding-left: 5px;
+}
+
+#notifs {
+  position: absolute;
+  width: 34px;
+  height: 12px;
+  left: 23px;
+  top: 145px;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #e5e5e5;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 22.5px;
+  height: 12.75px;
+  top: 138px;
+  left: 138px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  border: solid 1px #8da4a5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #8da4a5;
+  border: 1px #8da4a5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(91, 132, 127, 0.5);
+  border-color: #8da4a5;
+}
+
+input:checked + .slider:before {
+  background-color: #5b847f;
+  -webkit-transform: translateX(9.75px);
+  -ms-transform: translateX(9.75px);
+  transform: translateX(9.75px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 12.75px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#Stats {
+  width: 400px;
+  height: 580px;
+  background-color: #031819;
+}
+
+#closebutton {
+  background-color: #031819;
+  position: absolute;
+  width: 86px;
+  height: 18px;
+  top: 545px;
+  left: 170px;
+  color: #2d7975;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+#closebutton:hover {
+  cursor: pointer;
+}
+
+#actsum {
+  position: absolute;
+  left: 100px;
+  top: 79px;
+  background-color: #031819;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+}
+
+#highlight3 {
+  position: absolute;
+  left: 102px;
+  width: 200px;
+  top: 92px;
+  height: 16px;
+  background: rgba(141, 164, 165, 0.35);
+}
+
+#bottomline {
+  position: absolute;
+  width: 232px;
+  top: 418px;
+  left: 76px;
+  background-color: #031819;
+  border: 0.8px solid #5b847f;
+}
+
+#sideline {
+  position: absolute;
+  width: 232px;
+  top: 300px;
+  left: -40px;
+  background-color: #031819;
+  border: 0.8px solid #5b847f;
+  transform: rotate(-90.23deg);
+}
+
+#taskscompleted {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  top: 135px;
+  left: 140px;
+  background-color: #031819;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+}
+
+#hoursspent {
+  position: absolute;
+  width: 80px;
+  height: 16px;
+  top: 290px;
+  left: 0px;
+  background-color: #031819;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+
+  transform: rotate(-90.07deg);
+}
+
+#box {
+  position: absolute;
+  width: 35px;
+  height: 218px;
+  top: 200px;
+  left: 88px;
+  background-color: #031819;
+  background: #8da4a5;
+  border: 1.2px solid #8da4a5;
+  box-sizing: border-box;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+#tname {
+  position: absolute;
+  left: 68px;
+  top: 455px;
+  width: 75px;
+  height: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  transform: rotate(-90.07deg);
+  color: #e5e5e5;
+}
+
+#graph {
+  position: absolute;
+  left: 80px;
+  width: 280px;
+  height: 525px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+#cm {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 155px;
+  left: 140px;
+  border: 0px;
+  color: #e3e3e3;
+  background-color: #031819;
+}
+
+#dropdownname {
+  position: absolute;
+  width: 260px;
+  height: 36px;
+  left: 70px;
+  top: 370px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #e5e5e5;
+}
+
+#dropdown {
+  position: absolute;
+  width: 283px;
+  height: 37px;
+  left: 59px;
+  top: 420px;
+  padding-left: 9px;
+  background: #031918;
+  border: 1.5px solid #8da4a5;
+  box-sizing: border-box;
+  color: #8da4a5;
+  font-family: "Inter";
 }
