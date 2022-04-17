@@ -35,12 +35,14 @@
       <div id="taskName">No Current Tasks</div>
       <div id="timer" hidden>00:00:00</div>
       <button id="pause" hidden>▶</button>
+      <button id="checkmark" hidden>✓</button>
       <div id="highlight1"></div>
       <button id="text3">To-Do</button>
       <button id="text4">Completed</button>
       <div id="hide">
         <ul id="list"></ul>
-      </div>>
+      </div>
+      <button id="addtask">+ add task</button>
     </div>
     <div id="Completed" hidden>
       <img src="icon.png" id="image2" />
@@ -52,7 +54,38 @@
       <div id="line3"></div>
       <div id="hide2">
         <ul id="list2"></ul>
-      </div>>
+      </div>
+      <div id="taskscount"></div>
+    </div>
+    <div id="addTask" class="popup1" hidden>
+      <img src="icon.png" id="image2" />
+      <div id="cornerName1">KLOK</div>
+      <div id="line2"></div>
+      <h2 id="taskname">Task Name</h2>
+      <input type="text" id="name" placeholder="task name" />
+      <h2 id="websitesblock">Websites to Block</h2>
+      <h3>please separate links with a comma</h3>
+      <textarea type="text" id="websites" placeholder="still a work in progress"></textarea>
+      <button id="cancel">cancel</button>
+      <button id="create">create</button>
+      <div id="lin2"></div>
+      <h2 id="dropdownname">Time Allotted</h2>
+      <input type="text" id="dropdown" placeholder="enter amount of time, in hours" />
+    </div>
+    <div id="Stats" hidden>
+      <img src="icon.png" id="image2" />
+      <div id="cornerName1">KLOK</div>
+      <div id="line2"></div>
+      <div id="actsum">Activity Summary</div>
+      <div id="highlight3"></div>
+      <div id="graph">
+          
+      </div>
+      <div id="sideline"></div>
+      <div id="hoursspent">Time Spent</div>
+      <div id="taskscompleted">Tasks Completed</div>
+      <div id="closebutton">close</div>
+      <div id="bottomline"></div>
     </div>
     <script src="popup.js"></script>
     <script src="cookies.js"></script>
