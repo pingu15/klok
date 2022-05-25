@@ -1,6 +1,6 @@
 # klok
 
-klok.
+klok. Hackathon project submitted to LyonHacks II held by MCPT. (update: won audience favourite woohoo) Link to devpost here: https://devpost.com/software/klok
 
 Note: To test our project, load as an unpacked extension in your browser manage extensions tab
 
